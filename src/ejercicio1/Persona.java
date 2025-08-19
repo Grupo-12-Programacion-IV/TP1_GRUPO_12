@@ -12,4 +12,10 @@ public class Persona {
 	private String telefono;
 	private String email;
 	
+	public Persona () {
+		nombre = "Sin Nombre";
+		fechaNacimiento = LocalDate.of(2025, 1, 1);
+		
+	}
+	
 }
