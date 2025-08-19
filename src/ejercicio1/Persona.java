@@ -28,4 +28,12 @@ public class Persona {
 		this.telefono = telefono;
 		this.email = email;
 	}
+
+	public String toString() {
+		return "Datos de la persona: dni: " + dni + ", nombre: " + nombre + ", apellido: " + apellido + ", fechaNacimiento: "
+				+ fechaNacimiento + ", genero: " + genero + ", direccion: " + direccion + ", telefono: " + telefono
+				+ ", email: " + email;
+	}
+	
+	
 }
