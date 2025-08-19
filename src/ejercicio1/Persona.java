@@ -15,7 +15,17 @@ public class Persona {
 	public Persona () {
 		nombre = "Sin Nombre";
 		fechaNacimiento = LocalDate.of(2025, 1, 1);
-		
 	}
 	
+
+	public Persona(String dni, String nombre, String apellido, LocalDate fechaNacimiento, String genero, String direccion, String telefono, String email) {
+		this.dni = dni;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.fechaNacimiento = fechaNacimiento;
+		this.genero = genero;
+		this.direccion = direccion;
+		this.telefono = telefono;
+		this.email = email;
+	}
 }
