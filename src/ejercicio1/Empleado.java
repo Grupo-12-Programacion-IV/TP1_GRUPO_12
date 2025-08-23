@@ -22,11 +22,5 @@ public class Empleado extends Persona{
 		super();
 		this.legajo = 0; //Provisorio para permitir compilacion, cambiar por el metodo que genere el legajo automaticamente
 	}
-	
-	public Empleado (String puesto) {
-		this.puesto = puesto;
-		this.legajo = 0; //Provisorio para permitir compilacion, cambiar por el metodo que genere el legajo automaticamente
-	}
-	
-	
+		
 }
