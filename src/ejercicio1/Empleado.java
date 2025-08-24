@@ -23,14 +23,18 @@ public class Empleado extends Persona{
 	//Constructors
 	public Empleado () {
 		super();
+		
 		this.legajo = cont;
 		cont++;
+		
 	}
 	Empleado(String puesto, String dni, String nombre, String apellido, LocalDate fechaNacimiento, String genero, String direccion, String telefono, String email){
 		super(dni, nombre, apellido, fechaNacimiento, genero, direccion, telefono, email);
+		
 		legajo = cont; 
 		this.puesto = puesto;
 		cont++;
+		
 	}
 
 	//Métodos
@@ -40,6 +44,6 @@ public class Empleado extends Persona{
 	}		
 	
 	static public int devuelveProximoLegajo() {
-		return cont+1;
+		return cont;
 	}
 }
