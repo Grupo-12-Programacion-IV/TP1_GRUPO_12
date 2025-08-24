@@ -38,4 +38,8 @@ public class Empleado extends Persona{
 	public String toString() {
 		return "Datos del empleado: legajo: " + legajo + ", puesto:" + puesto + ", " + super.toString();
 	}		
+	
+	static public int devuelveProximoLegajo() {
+		return cont+1;
+	}
 }
