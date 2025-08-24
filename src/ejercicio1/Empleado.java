@@ -1,8 +1,11 @@
 package ejercicio1;
 
+import java.time.LocalDate;
+
 public class Empleado extends Persona{
 	private final int legajo;
 	private String puesto;
+	private static int cont = 1000;
 	
 	//Getters y setters
 	public String getPuesto() {
@@ -20,12 +23,14 @@ public class Empleado extends Persona{
 	//Constructors
 	public Empleado () {
 		super();
-		this.legajo = 0; //Provisorio para permitir compilacion, cambiar por el metodo que genere el legajo automaticamente
+		this.legajo = cont;
+		cont++;
 	}
 	Empleado(String puesto, String dni, String nombre, String apellido, LocalDate fechaNacimiento, String genero, String direccion, String telefono, String email){
 		super(dni, nombre, apellido, fechaNacimiento, genero, direccion, telefono, email);
-		legajo = 0; //Provisorio para permitir compilacion, cambiar por el metodo que genere el legajo automaticamente
+		legajo = cont; 
 		this.puesto = puesto;
+		cont++;
 	}
 
 	//Métodos
