@@ -27,5 +27,10 @@ public class Empleado extends Persona{
 		legajo = 0; //Provisorio para permitir compilacion, cambiar por el metodo que genere el legajo automaticamente
 		this.puesto = puesto;
 	}
-		
+
+	//Métodos
+	@Override
+	public String toString() {
+		return "Datos del empleado: legajo: " + legajo + ", puesto:" + puesto + ", " + super.toString();
+	}		
 }
